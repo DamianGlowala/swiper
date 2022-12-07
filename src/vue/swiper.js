@@ -355,7 +355,7 @@ const Swiper = {
         swiperParams,
       );
 
-      emit('swiper', swiperRef.value);
+      emit('swiper', swiperRef);
     });
     onBeforeUnmount(() => {
       if (swiperRef.value && !swiperRef.value.destroyed) {
